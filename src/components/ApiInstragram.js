@@ -18,7 +18,8 @@ const ApiInstragram = ({token, ...props}) => {
         async function fetchInstagramPost () {
           try{
             axios
-                .get(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token={token}`)
+                .get(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=https://graph.instagram.com/me/media?fields=id,caption,media_url&access_token=IGQVJYbDQ1VkU5UXlTSWhzb09YZAkZAvVkVqcndQOEQ1RVBJN1dCTTlPWkh5Sm9FVjh2VjZANQzhxMkt5UEpCSlBISC1PLUZAiUXNBT1NYMHVzMzRXV1RaS3VMbkUtcm1SME5hSkpiTUpEOXlOMlFxXzhDaQZDZD
+`)
                 .then((resp) => {
                     setFeedsData(resp.data.data)
                 })
