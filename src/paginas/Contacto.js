@@ -1,8 +1,33 @@
-import React from 'react'
+import React from "react";
 
 export default function Contacto() {
   return (
-    <div>Contacto</div>
-  )
+    <div>
+      <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">
+            Email
+          </label>
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <input type="text" class="form-control" id="exampleInputPassword1" />
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <label class="form-check-label" for="exampleCheck1">
+            Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Enviar
+        </button>
+      </form>
+    </div>
+  );
 }
-

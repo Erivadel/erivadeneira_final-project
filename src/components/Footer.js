@@ -30,10 +30,10 @@ return(
                 <ul className="list-unstyled">
                     
                     <h5 className="font-weight-bold mb-2">Cuentanos tus ideas, sueños, ilusión...</h5>           
-                    <li className="text-center">Teléfono</li>                  
-                    <i className="bi bi-whatsapp"/>
-                    <li className="text-center">Correo</li>
-                    <i className="bi bi-envelope-at"></i>
+                    <a href="https://chat.whatsapp.com/GiKwvMcUxAS4JDZsas3e7A"><li className="text-center">Teléfono</li>                  
+                    <i className="bi bi-whatsapp"/></a>
+                    <a href="/Contacto"><li className="text-center">Correo</li>
+                    <i className="bi bi-envelope-at"></i></a>
                 </ul>
                 
             </div>
