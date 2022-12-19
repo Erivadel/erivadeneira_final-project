@@ -11,7 +11,7 @@ export default function Contacto() {
     
     e.preventDefault();
 
-    emailjs.sendForm('service_z1owthj', 'template_xzza34u', form.current, 'v3jLsuSj4uQ1n0GGz')
+    emailjs.sendForm('service_z1owthj', 'template_xzza34u', form.current, 'KeyPublico')
       .then((result) => {
           console.log(result.text);
       }, (error) => {
