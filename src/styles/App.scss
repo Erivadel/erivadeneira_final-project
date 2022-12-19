@@ -21,9 +21,23 @@ nav a{
     
 
 }
+//pagina de contacto
+.mensajeria{
+    background-color: rgb(165, 171, 178);
+    padding: 10px;
+  margin: auto  ;
+  width: 800px;
+  height: auto;
+
+  .texto{
+    color: rgb(11, 18, 75);
+    font-size: 30px;
+  }
+
+}
 .carousel img{
-    width: 75%;
-    height: 700px;
+    width: 100%;
+    height: 1240px;
 }
 .sections{
     display: flex;
@@ -97,32 +111,10 @@ nav a{
 
 }
 
-// footer{  
-//     display: flex;
-
-//     .logoFooter{
-//         max-width: 310px;
-//         height: auto;
-//     }
-
-//     .columna{
-    
-//     display: flex;
-//     font-size: 60px;
+.divss{
+    margin-top: 20%;
+    color: aliceblue;
     
 
-//     }
-//     h5{
-//         font-size: 40px;
-//         text-align: center;
-//     }
-//     .inicio{
-//         font-size: 50px;
-//         color: var(--textColor);
-//     }
-//     .inicio:hover{
-//         color: red;
-//     }
+}
 
-
-// }

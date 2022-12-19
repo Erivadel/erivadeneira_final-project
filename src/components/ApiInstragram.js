@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react'
 import axios from 'axios'
-
 import Feed from './Feed'
+import { Api } from '../API/Api'
+
 
 
 
@@ -18,7 +19,7 @@ const ApiInstragram = ({token, ...props}) => {
         async function fetchInstagramPost () {
           try{
             axios
-                .get(`https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url&access_token=IGQVJYbDQ1VkU5UXlTSWhzb09YZAkZAvVkVqcndQOEQ1RVBJN1dCTTlPWkh5Sm9FVjh2VjZANQzhxMkt5UEpCSlBISC1PLUZAiUXNBT1NYMHVzMzRXV1RaS3VMbkUtcm1SME5hSkpiTUpEOXlOMlFxXzhDaQZDZD`)
+                .get(Api)
                 .then((resp) => {
                     setFeedsData(resp.data.data)
                 })

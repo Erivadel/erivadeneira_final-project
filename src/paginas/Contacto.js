@@ -1,33 +1,41 @@
-import React from "react";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
+
 
 export default function Contacto() {
+  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    
+    e.preventDefault();
+
+    emailjs.sendForm('service_z1owthj', 'template_xzza34u', form.current, 'v3jLsuSj4uQ1n0GGz')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
-    <div>
-      <form>
-        <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">
-            Email
-          </label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-          />
-        </div>
-        <div class="mb-3">
-          <input type="text" class="form-control" id="exampleInputPassword1" />
-        </div>
-        <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1">
-            Check me out
-          </label>
-        </div>
-        <button type="submit" class="btn btn-primary">
-          Enviar
-        </button>
-      </form>
-    </div>
+    
+    <div className="container mensajeria">
+    <form ref={form} onSubmit={sendEmail}>
+    <label  className="texto">Nombres</label><br></br>
+    <input className="form-control" type="text" name="user_name"  placeholder="Inserte su nombre"/><br></br>
+    <label  className="texto">Email</label><br></br>
+    <input className="form-control" type="email" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="inserte su correo electronico"/><br></br>
+
+    <label  className="Contact">Numero de contacto</label><br></br>
+    <input className="form-control" type="tel" name="contact_number" maxlength="12" pattern="[0-9+]+\d+"
+    placeholder="inserte su numero de de prefijo y su numero telefonico, ejm +34000000000"/><br></br>
+    
+    <label  className="texto">Mensaje</label><br></br>
+    <textarea className="form-control" name="message" placeholder="Inserte su mensaje y nos contactaremos con usted lo mas pronto posible . . ."/><br></br>
+    <input className="btn btn-outline-primary " type="submit" value="Send" />
+  </form>
+  </div>
   );
 }
