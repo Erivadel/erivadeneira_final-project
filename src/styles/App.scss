@@ -11,8 +11,16 @@
     --textColor: #eee;
 
 }
-
-
+a{
+    text-decoration: none;
+    color:white;
+}
+footer{
+    min-height: 45vh;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
 nav a{
     margin: 0 2rem;
     color: var(--textColor);
@@ -43,8 +51,7 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
-    
-    
+  
     
 
     

@@ -25,17 +25,20 @@ const Header = () => {
           <Link className="nav-link active" aria-current="page" to="/">Assets Designe</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/Empresa">Empresa</Link>
+          {/* <Link className="nav-link" to="/Empresa">Empresa</Link> */}
+        </li>
+        <li className="nav-item">
+        <li><a className="nav-link active" href="https://www.instagram.com/assets.designe/reels/" target="blank">Videos</a></li>
+        </li>
+        <li className="nav-item">
+        <li><a className="nav-link active" href="https://www.behance.net/alexarias7/projects" target="blank">Fotos</a></li>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           Proyectos
           </a>
           <ul className="dropdown-menu">
-            <li><a className="dropdown-item" href="https://www.instagram.com/assets.designe/reels/" target="blank">Videos</a></li>
-            <li><a className="dropdown-item" href="https://www.behance.net/alexarias7/projects" target="blank">Fotos</a></li>
-            <li><hr className="dropdown-divider"/></li>
-            <li><a className="dropdown-item" href="#">Cuentanos tus ideas, sueños, ilusión...</a></li>
+            <li><a className="dropdown-item" href="https://chat.whatsapp.com/GiKwvMcUxAS4JDZsas3e7A">Cuentanos tus ideas, sueños, ilusión...</a></li>
           </ul>
         </li>
         <li className="nav-item">
