@@ -48,7 +48,7 @@ export default function Contacto() {
         />
         <br></br>
 
-        <label className="Contact">Numero de contacto</label>
+        <label className="texto">Numero de contacto</label>
         <br></br>
         <input
           className="form-control"

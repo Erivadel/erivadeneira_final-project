@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Website for professionals and students of the architecture sector.
+Version: 1.0.0
+Author: Erick Rivadeneira Delgado
+Author URI: https://github.com/Erivadel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an exercise for General Assembly Web Development Course. It was asked to use
+a public API and make some unity tests. This exercise is done with React, JS, Axios,
+HTML and Sass.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+To check the result of the web page's development, please check the next link: 
+Erivadel/erivadeneira_final-project: Front End Web Development: Proyecto Final (github.com)
+## Development
 
-### `npm start`
+### 1. Structure:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The application has a few components:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- A header with several pages that directs to social networks and portfolios to learn more about the contents and existing works.
+- A page of contacts linked to an API to receive emails with personal data of the interested client.
+- a page that redirects to a WhatsApp group so that the client can communicate directly with the owner of the page  
+- Contains Carrousel with 3 photos
+- A connection with API publishes the Instagram account of the owner of the page so that you can update new content and these will be displayed automatically without making configurations.
+### 2. API KEY:
+- First, the application takes the input entered by the user and makes a request to [EmailJs] (https://www.emailjs.com/docs/).
+- Secondly, the application takes the input written by the user and makes a request to [Instagram] to view content of videos and photos of the owner to this website created (https://developers.facebook.com/docs/instagram/).
 
-### `npm test`
+### 3. Email Functionality:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once the contact page is displayed the user can click on send message after filling in the required fields so the owner can contact after receiving the email that will be stored in the messaging account.
 
-### `npm run build`
+### 4. Instagram account functionality
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+All content such as photos and videos that the owner has on his business Instagram account, or promotion, will be displayed on the website. And if the Instagram account is updated with new content or deleting new content, the website will also do so in real time.
+Long-lived Access Token will be valid for 60 days, if the long-lived token has expired you may refresh the token within 60 days, the token will no longer be refreshed if exceeded the 60 days limit. Documentation must be read to perform renewal.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Install
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+To use this project you may need to follow the next steps:
+- Clone the repo
+- Install the dependencies with `npm install`
+- Start the project with `npm start`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project has been developed by *Erick Rivadeneira Delgado*.

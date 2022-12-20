@@ -7,23 +7,17 @@ const Footer = () => {
     return (
 
         <footer className="text-white bg-dark ">
-            <div className="container">
+            <div className="container-fluid">
                 <div className="row">
-
-                    <div className="col-md-1 logoAbajo"></div>
-
-                    <div className="col-md-3">
+                    <div className="col-md-6">
                         <div>
-                            <a href="/" className="aling-items-center justyfy-content-center">
-                                <img src={logoSinFondo} className="logoFooter mx-2" height="180" />
+                            <a href="/" className="aling-items-left justyfy-content-center">
+                                <img src={logoSinFondo} className="logoFooter mx-5" height="200" />
                             </a>
-
                         </div>
                     </div>
                     
-                    <div className="col-md-3 abajo ">
-                        {/* <a href="https://www.behance.net/alexarias7/projects" target="blank"><i className="bi bi-behance" /></a>*/}
-                        
+                    <div className="col abajo ">                                            
                         <div className="row divss">
                         <h5 className="font-weight-bold text-left mb-2">Síguenos y inspirate</h5>
                             <div className="col-md-2 ">
@@ -35,12 +29,12 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="col-md-3 abajo ">
+                    <div className="col abajo ">
                        
                         <div className="row divss">
                         <h5 className="font-weight-bold text-left mb-2">Cuentanos tus ideas, sueños, ilusión...</h5>
-                            <div className="col-md-6">
-                                <div className="row ">
+                            <div className="col">
+                                <div className="row">
                                     <div className="col-md-2 ">
                                         <i className="bi bi-whatsapp" />
                                     </div>
@@ -49,7 +43,7 @@ const Footer = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-md-6">
+                            <div className="col">
                                 <div className="row">
                                     <div className="col-md-2">
                                         <i className="bi bi-envelope-at "></i>
@@ -60,16 +54,11 @@ const Footer = () => {
                                 </div>
                             </div>
                         </div>
-
-
-                    </div>
-
-                    <div className="col-md-1 "></div>   
-                    
+                    </div>                    
                 </div>
 
-                <div className="row" >
-                    <a href="/"><div className="inicio col-12 ms-md-auto text-center" >
+                <div className="footerInicio">
+                    <a href="/"><div className="inicio col-12 ms-md-auto text-center"><br></br>
                         <i className="bi bi-chevron-double-up"></i>
                     </div>
                     </a>
@@ -77,12 +66,6 @@ const Footer = () => {
             </div>
 
         </footer>
-
-
-
-
-
-
     )
 
 }
